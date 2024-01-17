@@ -38,11 +38,9 @@ public class CustomerAge {
         /// TODO: Determine older customer (use getAge())
         //       and output older customer's info (use printInfo())
         if (customer1.getAge() > customer2.getAge()) {
-            System.out.println("Name: " + customer1.getName());
-            System.out.println("Age: " + customer1.getAge());
+            customer1.printInfo();
         } else {
-            System.out.println("Name: " + customer2.getName());
-            System.out.println("Age: " + customer2.getAge());
+            customer2.printInfo();
         }
     }
 }
