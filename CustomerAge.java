@@ -8,35 +8,32 @@ public class CustomerAge {
         Customer customer2 = new Customer();
 
         // TODO: Declare name and age variables (string, and int)
-        String name1;
-        String name2;
-        int age1;
-        int age2;
+        String name;
+        int age;
+
 
         // TODO: Read name and age input for customer 1
-        System.out.println("Enter your name: ");
-        name1 = scnr.nextLine();
-        System.out.println("Enter your age: ");
-        age1 = Integer.parseInt(scnr.nextLine());
+        name = scnr.nextLine();
+        age = scnr.nextInt();
+        scnr.nextLine(); // Consume newline
 
         // TODO: Set customer 1 name and age fields using mutator methods (setName() and setAge())
-        customer1.setName(name1);
-        customer1.setAge(age1);
+        customer1.setName(name);
+        customer1.setAge(age);
 
         // TODO: Read name and age input for customer 2
-        System.out.println("Enter your name: ");
-        name2 = scnr.nextLine();
-        System.out.println("Enter your age: ");
-        age2 = Integer.parseInt(scnr.nextLine());
+        name = scnr.nextLine();
+        age = scnr.nextInt();
 
         // TODO: Set customer 2 name and age fields using mutator methods (setName() and setAge())
-        customer2.setName(name2);
-        customer2.setAge(age2);
+        customer2.setName(name);
+        customer2.setAge(age);
 
         System.out.println("Customer that is older:");
 
         /// TODO: Determine older customer (use getAge())
-        //       and output older customer's info (use printInfo())
+        //        and output older customer's info (use printInfo())
+
         if (customer1.getAge() > customer2.getAge()) {
             customer1.printInfo();
         } else {
